@@ -1,0 +1,108 @@
+body{
+  background: lightblue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+  background-position: center center fill; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-image: url('C:\Users\User\Desktop\React-clicker\clicker\public\tło2.jpg');
+}
+#glowny{
+  text-align: center;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100vw;
+  height: auto;
+  box-sizing: border-box;
+  gap: 20px;
+}
+#lewy, #prawy, #srodkowy{
+  text-align: center;
+  border: 5px dashed black;
+  border-radius: 10%;
+}
+#przycisk {
+  background-color: #4CAF50; 
+  color: white;
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 10px; 
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+#przycisk:hover {
+  background-color: lightgreen;
+}
+#przycisk:disabled {
+  background-color: red; 
+  color: white;
+  text-decoration: line-through; 
+  cursor: not-allowed; 
+  opacity: 0.7;
+}
+#avatar-section {
+  margin: 20px 0;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+#avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #4CAF50;
+}
+
+.exp-bar {
+  width: 80%;
+  background-color: #ccc;
+  height: 20px;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+.exp-fill {
+  background-color: #4CAF50;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.level {
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+}
+#tabela{
+  
+}
+
+#nazwy-nagrody{
+  font-size: 20px;
+  color: aqua;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#nagrody{
+
+}
+
+#nagroda {
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+  border: none;
+  border-radius: 10px; 
+}
+
+#nagroda[disabled] {
+  background-color: red; 
+  color: white;
+  cursor: not-allowed; 
+  opacity: 0.7;
+}
